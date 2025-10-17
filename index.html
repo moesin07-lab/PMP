@@ -13,7 +13,14 @@
   <meta property="og:image" content="social-preview.png" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://moesin07-lab.github.io/Portfolio/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Moe Myint Kyal Sin — PMP Portfolio" />
+  <meta name="twitter:description" content="Creative Project Management · Communications & IO Psychology" />
+  <meta name="twitter:image" content="https://moesin07-lab.github.io/Portfolio/social-preview.png" />
+  <meta name="keywords" content="Project Management, PMP Portfolio, Organizational Psychology, Public Relations, Creative Strategy, Leadership" />
+  <meta name="author" content="Moe Myint Kyal Sin" />
   <meta name="theme-color" content="#FDB813" />
+
   <style>
     :root {
       --gold: #fdb813;
@@ -24,9 +31,11 @@
       --bg: #fff8e1;
       --border: #ffe3a6;
     }
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
     body {
-      font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
       background: var(--bg);
       color: var(--ink);
       margin: 0;
@@ -36,22 +45,41 @@
       background: linear-gradient(90deg, var(--amber), var(--gold));
       color: #fff;
       text-align: center;
-      padding: 2.25rem 1rem;
+      padding: 2.5rem 1rem 1.8rem;
     }
-    h1 { margin: 0 0 .25rem; font-size: 2.3rem; }
-    header p { margin: .25rem 0 0; font-weight: 600; }
-    main { max-width: 1000px; margin: 2rem auto; padding: 0 1rem 2.5rem; }
+    h1 {
+      margin: 0 0 .25rem;
+      font-size: 2rem;
+    }
+    header p {
+      margin: .25rem 0 0;
+      font-weight: 600;
+      color: #222;
+    }
+    main {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem 2.5rem;
+    }
     section {
       margin-bottom: 2rem;
       background: var(--card);
       border: 1px solid var(--border);
       border-radius: 14px;
-      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+      box-shadow: 0 6px 18px rgba(0,0,0,.06);
       padding: 1.25rem;
     }
-    h2 { color: #a06a00; margin: 0 0 .75rem; }
-    ul { margin: .5rem 0 .25rem 1.2rem; }
-    .timeline { position: relative; padding-left: 26px; }
+    h2 {
+      color: #a06a00;
+      margin: 0 0 .75rem;
+    }
+    ul {
+      margin: .5rem 0 .25rem 1.2rem;
+    }
+    .timeline {
+      position: relative;
+      padding-left: 26px;
+    }
     .timeline:before {
       content: "";
       position: absolute;
@@ -87,9 +115,17 @@
       align-items: center;
       margin-bottom: 4px;
     }
-    .t-title { font-weight: 800; }
-    .t-role { color: var(--muted); font-size: .95rem; }
-    .t-meta { color: #5f5f5f; font-size: .92rem; }
+    .t-title {
+      font-weight: 800;
+    }
+    .t-role {
+      color: var(--muted);
+      font-size: .95rem;
+    }
+    .t-meta {
+      color: #5f5f5f;
+      font-size: .92rem;
+    }
     .pills {
       display: flex;
       flex-wrap: wrap;
@@ -102,6 +138,10 @@
       border-radius: 999px;
       background: #fff7d1;
       border: 1px solid var(--border);
+      transition: background 0.3s ease;
+    }
+    .pill:hover {
+      background: #ffe066;
     }
     footer {
       text-align: center;
@@ -109,38 +149,60 @@
       color: #fff;
       padding: 1.5rem 1rem;
     }
-    footer a { color: #fff; text-decoration: underline; }
-    /* --- Profile Photo --- */
+    footer a {
+      color: #fff;
+      text-decoration: underline;
+    }
+
+    /* Profile Header Styling */
     .profile-container {
       text-align: center;
-      margin-top: 40px;
+      margin-top: 20px;
     }
     .profile-photo {
-      width: 160px;
-      height: 160px;
+      width: 130px;
+      height: 130px;
       object-fit: cover;
       border-radius: 50%;
-      border: 4px solid #B8860B;
-      box-shadow: 0 0 10px rgba(184,134,11,0.3);
-      margin-bottom: 10px;
+      border: 4px solid #fff4d0;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      margin-bottom: 12px;
     }
-    .profile-container h1 {
-      font-size: 26px;
-      color: #B8860B;
-      margin-bottom: 6px;
+    .link-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 12px;
     }
-    .profile-container p {
-      font-size: 15px;
-      color: #444;
+    .link-btn {
+      background-color: #fff4d0;
+      color: #333;
+      padding: 6px 14px;
+      border-radius: 10px;
+      font-weight: 600;
+      text-decoration: none;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      transition: all 0.2s ease-in-out;
+    }
+    .link-btn:hover {
+      background-color: #fdd96b;
+      transform: translateY(-1px);
+      box-shadow: 0 3px 8px rgba(0,0,0,0.15);
     }
   </style>
 </head>
+
 <body>
   <header>
     <div class="profile-container">
       <img src="moesin-profile.jpg" alt="Moe Myint Kyal Sin" class="profile-photo">
       <h1>Moe Myint Kyal Sin</h1>
       <p>PMP Experience Portfolio · Creative Project Management · Communications & IO Psychology</p>
+      <div class="link-buttons">
+        <a href="https://www.linkedin.com/in/moesin07" target="_blank" class="link-btn">LinkedIn</a>
+        <a href="https://linktr.ee/moesin.diary" target="_blank" class="link-btn">Linktree</a>
+        <a href="https://www.instagram.com/moesin.diary" target="_blank" class="link-btn">@moesin.diary</a>
+      </div>
     </div>
   </header>
 
@@ -162,15 +224,26 @@
     <section>
       <h2>Experience Timeline</h2>
       <div class="timeline">
+        
+        <!-- Each item includes project-phase bubbles -->
         <div class="t-item"><span class="dot"></span><div class="t-head"><div class="t-title">Account Executive (Guan Fitness)</div><div class="t-role">· Titan Public Relations</div></div><div class="t-meta">Sep 2025 – Dec 2025 · ~150 hrs</div><p>Led team, managed client, delivered brand identity and growth strategy for Guan Fitness.</p><div class="pills"><span class="pill">Initiation</span><span class="pill">Planning</span><span class="pill">Execution</span></div></div>
-        <div class="t-item"><span class="dot"></span><div class="t-head"><div class="t-title">Brazilian Spotlight 2025</div><div class="t-role">· Newport Beach Film Festival</div></div><div class="t-meta">Aug 2025 – Dec 2025</div><p>Coordinated sponsors and outreach for the NBFF Brazilian Spotlight event and screening.</p></div>
-        <div class="t-item"><span class="dot"></span><div class="t-head"><div class="t-title">Thrive Mentor</div><div class="t-role">· CSUF Public Health</div></div><div class="t-meta">Aug 2025 – May 2026</div><p>Guided first-gen students with academic, social, and personal growth sessions.</p></div>
-        <div class="t-item"><span class="dot"></span><div class="t-head"><div class="t-title">The Inner Universe Podcast</div><div class="t-role">· Self-Produced</div></div><div class="t-meta">Apr 2025 – Present</div><p>Produced, scripted, and edited podcast exploring creativity, healing, and psychology.</p></div>
-        <div class="t-item"><span class="dot"></span><div class="t-head"><div class="t-title">Account Coordinator (Litterbox)</div><div class="t-role">· Titan Public Relations</div></div><div class="t-meta">Sep 2024 – Dec 2024</div><p>Developed social media content strategy and outreach for Litterbox EDM campaign.</p></div>
-        <div class="t-item"><span class="dot"></span><div class="t-head"><div class="t-title">Fearless Futures & The Artist’s Mind Podcasts</div><div class="t-role">· Fearless Digital</div></div><div class="t-meta">Jan 2023 – Oct 2023</div><p>Produced and hosted two creative podcasts exploring self-growth and artistry.</p></div>
-        <div class="t-item"><span class="dot"></span><div class="t-head"><div class="t-title">HD eCommerce Project</div><div class="t-role">· Helmets & Decals</div></div><div class="t-meta">Mar 2021 – Apr 2022</div><p>Created eCommerce business for a client, handling site design and marketing launch.</p></div>
-        <div class="t-item"><span class="dot"></span><div class="t-head"><div class="t-title">Social Media Marketing Agent</div><div class="t-role">· Fearless Digital (Freelance)</div></div><div class="t-meta">Jul 2020 – Apr 2021</div><p>Launched digital campaigns, managed social channels, and led brand design projects.</p></div>
-        <div class="t-item"><span class="dot"></span><div class="t-head"><div class="t-title">Consumer Technology Association (CTA)® MONOXERO Project</div><div class="t-role">· CTA</div></div><div class="t-meta">Mar 2017 – May 2017</div><p>Created tech concept offering free internet in emerging regions; pitched to CTA judges.</p></div>
+
+        <div class="t-item"><span class="dot"></span><div class="t-head"><div class="t-title">Brazilian Spotlight 2025</div><div class="t-role">· Newport Beach Film Festival</div></div><div class="t-meta">Aug 2025 – Dec 2025</div><p>Coordinated sponsor outreach, creative assets, and event logistics for the NBFF Brazilian Spotlight.</p><div class="pills"><span class="pill">Coordination</span><span class="pill">Event Management</span><span class="pill">Outreach</span></div></div>
+
+        <div class="t-item"><span class="dot"></span><div class="t-head"><div class="t-title">Thrive Mentor</div><div class="t-role">· CSUF Public Health</div></div><div class="t-meta">Aug 2025 – May 2026</div><p>Guided first-gen students through personal growth and leadership development sessions.</p><div class="pills"><span class="pill">Mentorship</span><span class="pill">Leadership</span><span class="pill">Coaching</span></div></div>
+
+        <div class="t-item"><span class="dot"></span><div class="t-head"><div class="t-title">The Inner Universe Podcast</div><div class="t-role">· Self-Produced</div></div><div class="t-meta">Apr 2025 – Present</div><p>Produced and hosted podcast exploring creativity, healing, and psychology through storytelling.</p><div class="pills"><span class="pill">Creative Production</span><span class="pill">Storytelling</span><span class="pill">Branding</span></div></div>
+
+        <div class="t-item"><span class="dot"></span><div class="t-head"><div class="t-title">Account Coordinator (Litterbox)</div><div class="t-role">· Titan Public Relations</div></div><div class="t-meta">Sep 2024 – Dec 2024</div><p>Developed social media and PR campaign strategy for an EDM client to grow awareness and engagement.</p><div class="pills"><span class="pill">Planning</span><span class="pill">Strategy</span><span class="pill">Execution</span></div></div>
+
+        <div class="t-item"><span class="dot"></span><div class="t-head"><div class="t-title">Fearless Futures & The Artist’s Mind Podcasts</div><div class="t-role">· Fearless Digital</div></div><div class="t-meta">Jan 2023 – Oct 2023</div><p>Produced two podcast series focused on creativity, mindset, and emotional growth.</p><div class="pills"><span class="pill">Content Creation</span><span class="pill">Collaboration</span><span class="pill">Production</span></div></div>
+
+        <div class="t-item"><span class="dot"></span><div class="t-head"><div class="t-title">HD eCommerce Project</div><div class="t-role">· Helmets & Decals</div></div><div class="t-meta">Mar 2021 – Apr 2022</div><p>Built eCommerce business for a client, handling site design, branding, and launch strategy.</p><div class="pills"><span class="pill">Design</span><span class="pill">Launch</span><span class="pill">Marketing</span></div></div>
+
+        <div class="t-item"><span class="dot"></span><div class="t-head"><div class="t-title">Social Media Marketing Agent</div><div class="t-role">· Fearless Digital (Freelance)</div></div><div class="t-meta">Jul 2020 – Apr 2021</div><p>Created and executed digital marketing campaigns for clients in the creative and tech industries.</p><div class="pills"><span class="pill">Social Media</span><span class="pill">Brand Strategy</span><span class="pill">Advertising</span></div></div>
+
+        <div class="t-item"><span class="dot"></span><div class="t-head"><div class="t-title">Consumer Technology Association (CTA)® MONOXERO Project</div><div class="t-role">· CTA</div></div><div class="t-meta">Mar 2017 – May 2017</div><p>Developed concept for MONOXERO, a free-internet technology for emerging regions; pitched at CTA.</p><div class="pills"><span class="pill">Innovation</span><span class="pill">Presentation</span><span class="pill">Technology</span></div></div>
+
       </div>
     </section>
   </main>
